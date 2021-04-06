@@ -13,9 +13,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;//Timing for the fast forward and rewind button
 
-public class FinalProject_CST240005_MS extends Application
+public class MediaPlayer extends Application
 {
-    File file = new File("..\\IdeaProjects\\FinalProject\\Music\\");
+    File file = new File("");
 
     final Label labelFile = new Label();
 
@@ -28,16 +28,16 @@ public class FinalProject_CST240005_MS extends Application
     public void start(Stage primaryStage)
     {
         File songs[] = new File[10];//Array that holds each song
-        songs[0] = new File("changes.mp3");
-        songs[1] = new File("forgetyou.mp3");
-        songs[2] = new File("ifieverfallinlove.mp3");
-        songs[3] = new File("newlife.mp3");
-        songs[4] = new File("NoOne.mp3");
-        songs[5] = new File("reallove.mp3");
-        songs[6] = new File("StandByMe.mp3");
-        songs[7] = new File("WeBelongToget.mp3");
-        songs[8] = new File("EndOfTheRoad.mp3");
-        songs[9] = new File("Love.mp3");
+        songs[0] = new File("");
+        songs[1] = new File("");
+        songs[2] = new File("");
+        songs[3] = new File("");
+        songs[4] = new File("");
+        songs[5] = new File("");
+        songs[6] = new File("");
+        songs[7] = new File("");
+        songs[8] = new File("");
+        songs[9] = new File("");
 
         final Label songLabel = new Label();
 
@@ -101,14 +101,14 @@ public class FinalProject_CST240005_MS extends Application
 
         });
         // Lines 107-144 sets the sizes of the buttons and adds images to each button
-        Image Stop = new Image("file:/Users/matthiassmartt/IdeaProjects/FinalProject/stop.jpg");
+        Image Stop = new Image("");
         ImageView stopView = new ImageView(Stop);
         stopView.setFitHeight(40);
         stopView.setPreserveRatio(true);
         stop.setPrefSize(50,20);
         stop.setGraphic(stopView);
 
-        Image Play = new Image("file:/Users/matthiassmartt/IdeaProjects/FinalProject/play.jpg");
+        Image Play = new Image("");
         ImageView playView = new ImageView(Play);
         playView.setFitHeight(40);
         playView.setPreserveRatio(true);
@@ -116,21 +116,21 @@ public class FinalProject_CST240005_MS extends Application
         play.setGraphic(playView);
 
 
-        Image Pause = new Image("file:/Users/matthiassmartt/IdeaProjects/FinalProject/pause.jpg");
+        Image Pause = new Image("");
         ImageView pauseView = new ImageView(Pause);
         pauseView.setFitHeight(40);
         pauseView.setPreserveRatio(true);
         pause.setPrefSize(50,20);
         pause.setGraphic(pauseView);
 
-        Image Rewind = new Image("file:/Users/matthiassmartt/IdeaProjects/FinalProject/rewind.jpg");
+        Image Rewind = new Image("");
         ImageView rewindView = new ImageView(Rewind);
         rewindView.setFitHeight(40);
         rewindView.setPreserveRatio(true);
         rewind.setPrefSize(50,20);
         rewind.setGraphic(rewindView);
 
-        Image FF = new Image("file:/Users/matthiassmartt/IdeaProjects/FinalProject/ff.jpg");
+        Image FF = new Image("");
         ImageView FFView = new ImageView(FF);
         FFView.setFitHeight(40);
         FFView.setPreserveRatio(true);
